@@ -7,18 +7,36 @@ import { motion } from 'framer-motion';
 interface CertificateImageProps {
   imagePath: string;
   title: string;
+  pdfPath?: string; // Optional PDF path for viewing the full certificate
 }
 
-const CertificateImage: React.FC<CertificateImageProps> = ({ imagePath, title }) => {
+const CertificateImage: React.FC<CertificateImageProps> = ({ imagePath, title, pdfPath }) => {
   const [isHovered, setIsHovered] = useState(false);
+
+  // Function to handle click on certificate
+  const handleCertificateClick = () => {
+    // Show an alert that PDFs are not available yet
+    alert('Certificate PDF is not available yet. This feature will be enabled soon.');
+    
+    // Commented out the original functionality for future use when PDFs are available
+    // if (pdfPath) {
+    //   window.open(pdfPath, '_blank');
+    // } else {
+    //   // If no PDF path is provided, use the image path but replace the extension
+    //   // This assumes that PDFs are named the same as images but with .pdf extension
+    //   const inferredPdfPath = imagePath.replace(/\.(jpg|jpeg|png)(_page-\d+)?$/i, '.pdf');
+    //   window.open(inferredPdfPath, '_blank');
+    // }
+  };
 
   return (
     <motion.div 
-      className="h-[400px] bg-primary mb-6 overflow-hidden relative rounded-sm shadow-lg"
+      className="h-[400px] bg-primary mb-6 overflow-hidden relative rounded-sm shadow-lg cursor-pointer"
       whileHover={{ 
         scale: 1.02,
         transition: { duration: 0.2 }
       }}
+      onClick={handleCertificateClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

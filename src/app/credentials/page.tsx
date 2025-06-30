@@ -183,6 +183,7 @@ export default function Credentials() {
                 <CertificateImage 
                   imagePath="/certificates/professional/Google AI Essentials_page-0001.jpg" 
                   title="Google AI Essentials Certificate" 
+                  pdfPath="/certificates/professional/Google AI Essentials.pdf"
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">Google AI Essentials</h3>
                 <p className="mono-text text-sm text-light mb-2">Google</p>
@@ -207,6 +208,7 @@ export default function Credentials() {
                 <CertificateImage 
                   imagePath="/certificates/professional/Google Data Analytics_page-0001.jpg" 
                   title="Google Data Analytics Certificate" 
+                  pdfPath="/certificates/professional/Google Data Analytics.pdf"
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">Data Analytics Professional</h3>
                 <p className="mono-text text-sm text-light mb-2">Google</p>
@@ -231,6 +233,7 @@ export default function Credentials() {
                 <CertificateImage 
                   imagePath="/certificates/professional/Google Cybersecurity_page-0001.jpg" 
                   title="Google Cybersecurity Certificate" 
+                  pdfPath="/certificates/professional/Google Cybersecurity.pdf"
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">Cybersecurity Professional</h3>
                 <p className="mono-text text-sm text-light mb-2">Google</p>
