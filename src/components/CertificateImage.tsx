@@ -58,12 +58,24 @@ const CertificateImage = ({ imagePath, title, pdfPath }: CertificateImageProps) 
         </div>
       </motion.div>
 
-      {/* Modal for larger certificate view */}
+      {/* Modal for larger certificate view with glassmorphism effect */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90" onClick={closeModal}>
-          <div className="relative max-w-5xl w-[95%] h-[90vh] bg-white rounded-lg">
+        <motion.div 
+          className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={closeModal}
+        >
+          <motion.div 
+            className="relative max-w-4xl w-[90%] h-[85vh] glass rounded-sm overflow-hidden"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            onClick={(e) => e.stopPropagation()}
+          >
             <button 
-              className="absolute top-4 right-4 z-10 bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold"
+              className="absolute top-4 right-4 z-10 bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold hover:bg-opacity-80 transition-all duration-300"
               onClick={(e) => {
                 e.stopPropagation();
                 closeModal();
@@ -71,16 +83,16 @@ const CertificateImage = ({ imagePath, title, pdfPath }: CertificateImageProps) 
             >
               ×
             </button>
-            <div className="relative w-full h-full p-4">
+            <div className="relative w-full h-full p-6 flex items-center justify-center">
               {/* Use the image path from the certificate */}
               <img 
                 src={imagePath} 
                 alt={title}
-                className="w-full h-full object-contain rounded-lg"
+                className="max-w-full max-h-full object-contain rounded-sm shadow-lg"
               />
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </>
   );
