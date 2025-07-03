@@ -266,9 +266,12 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <div className="h-48 bg-primary mb-4 overflow-hidden relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="pixel-text text-accent">DYNA BRAILLE</span>
-                </div>
+                <Image
+                  src="/DYNA BRAILLE/WhatsApp Image 2025-06-11 at 2.27.42 PM.jpeg"
+                  alt="Dyna Braille Project"
+                  fill
+                  style={{objectFit: 'cover'}}
+                />
               </div>
               <h3 className="pixel-text text-xl text-accent mb-2">DYNA BRAILLE</h3>
               <p className="mono-text text-sm text-light mb-4">
