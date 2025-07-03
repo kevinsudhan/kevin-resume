@@ -61,14 +61,14 @@ const CertificateImage = ({ imagePath, title, pdfPath }: CertificateImageProps) 
       {/* Modal for larger certificate view with glassmorphism effect */}
       {isModalOpen && (
         <motion.div 
-          className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md"
+          className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-xl bg-black bg-opacity-30"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={closeModal}
         >
           <motion.div 
-            className="relative max-w-4xl w-[90%] h-[85vh] glass rounded-sm overflow-hidden"
+            className="relative max-w-6xl w-[95%] h-[95vh] glass rounded-sm overflow-hidden"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
