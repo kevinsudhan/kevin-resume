@@ -18,6 +18,13 @@ module.exports = {
         mono: ["'Space Mono'", "monospace"],
         sans: ["'Inter'", "sans-serif"],
       },
+      backdropBlur: {
+        xs: '2px',
+        sm: '4px',
+        md: '8px',
+        lg: '12px',
+        xl: '16px',
+      },
     },
   },
   plugins: [],

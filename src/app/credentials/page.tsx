@@ -10,7 +10,8 @@ export default function Credentials() {
   const [activeTab, setActiveTab] = useState('certificates');
 
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-16 relative overflow-hidden">
+      <div className="absolute inset-0 -z-20 glass-dark"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-12"
@@ -24,7 +25,7 @@ export default function Credentials() {
 
         {/* Tab Navigation */}
         <div className="flex justify-center mb-10">
-          <div className="inline-flex bg-secondary rounded-sm overflow-hidden">
+          <div className="inline-flex glass rounded-sm overflow-hidden">
             <button
               className={`px-6 py-3 mono-text ${
                 activeTab === 'internships' ? 'bg-accent text-primary' : 'text-light'
@@ -54,7 +55,7 @@ export default function Credentials() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Alibi Technologies LLP Internship */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
@@ -82,7 +83,7 @@ export default function Credentials() {
 
               {/* Everyday Banking Solutions Project */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.2 }}
@@ -114,7 +115,7 @@ export default function Credentials() {
               <div className="flex flex-col space-y-12 max-w-4xl mx-auto">
                 {/* Alibi Technologies Certificate - Full View */}
                 <motion.div
-                  className="bg-secondary p-6 rounded-sm"
+                  className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4 }}
@@ -138,7 +139,7 @@ export default function Credentials() {
                 
                 {/* Everyday Banking Project - Full View */}
                 <motion.div
-                  className="bg-secondary p-6 rounded-sm"
+                  className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 0.2 }}
@@ -174,7 +175,7 @@ export default function Credentials() {
             <div className="flex flex-col space-y-12 max-w-4xl mx-auto">
               {/* Google AI Essentials */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
@@ -199,7 +200,7 @@ export default function Credentials() {
 
               {/* Google Data Analytics */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.1 }}
@@ -224,7 +225,7 @@ export default function Credentials() {
 
               {/* Google Cybersecurity */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.2 }}
@@ -249,7 +250,7 @@ export default function Credentials() {
 
               {/* Google IT Automation */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.3 }}
@@ -273,7 +274,7 @@ export default function Credentials() {
 
               {/* Google Prompting */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.4 }}
@@ -297,7 +298,7 @@ export default function Credentials() {
 
               {/* Generative AI Automation */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.5 }}
@@ -321,7 +322,7 @@ export default function Credentials() {
 
               {/* Generative AI Learning Path */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.6 }}
@@ -345,7 +346,7 @@ export default function Credentials() {
 
               {/* IBM AI Developer */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.7 }}
@@ -369,7 +370,7 @@ export default function Credentials() {
 
               {/* IBM Full Stack Software */}
               <motion.div
-                className="bg-secondary p-6 rounded-sm"
+                className="glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.8 }}

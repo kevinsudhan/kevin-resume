@@ -41,7 +41,8 @@ const fallbackIcon = '/logos/HARDWARE.jpg';
 
 export default function Projects() {
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-16 relative overflow-hidden">
+      <div className="absolute inset-0 -z-20 glass-dark"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.div
@@ -70,7 +71,7 @@ export default function Projects() {
               {/* Project Image */}
               <div className="md:w-1/2">
                 <Link href={`/projects/${project.id}`} className="block">
-                  <div className="aspect-w-16 aspect-h-9 overflow-hidden pixel-border border-accent">
+                  <div className="aspect-w-16 aspect-h-9 overflow-hidden glass">
                     <div className="h-64 md:h-80 relative">
                       <Image
                         src={project.images[0]}
@@ -100,7 +101,7 @@ export default function Projects() {
                   <h3 className="mono-text text-sm text-light/60 mb-3">TECH STACK</h3>
                   <div className="flex flex-wrap gap-3">
                     {project.techStack.map((tech) => (
-                      <div key={tech} className="flex items-center px-3 py-2 bg-dark pixel-border border-accent/50">
+                      <div key={tech} className="flex items-center px-3 py-2 glass hover:glass-accent transition-all duration-300">
                         <img 
                           src={techIcons[tech] || fallbackIcon}
                           alt={tech}
@@ -116,7 +117,7 @@ export default function Projects() {
                 
                 {/* View Project Button */}
                 <div>
-                  <Link href={`/projects/${project.id}`} className="inline-block pixel-border border-accent px-6 py-2 mono-text text-sm text-light hover:bg-accent hover:text-dark transition-colors">
+                  <Link href={`/projects/${project.id}`} className="inline-block glass-accent px-6 py-2 mono-text text-sm text-light hover:bg-accent hover:text-dark transition-all duration-300">
                     VIEW PROJECT
                   </Link>
                 </div>

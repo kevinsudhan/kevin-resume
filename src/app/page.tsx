@@ -53,80 +53,12 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Pixelated Decorative Elements - Enhanced with animations */}
-        {showPixels && (
-          <>
-            <motion.div 
-              className="absolute top-20 left-10 w-8 h-8 bg-accent opacity-70"
-              animate={{ 
-                scale: [1, 1.2, 0.9, 1],
-                rotate: [0, 5, -5, 0]
-              }}
-              transition={{ 
-                duration: 4, 
-                repeat: Infinity,
-                repeatType: "reverse" 
-              }}
-            />
-            <motion.div 
-              className="absolute bottom-20 right-10 w-16 h-16 bg-accent opacity-30"
-              animate={{ 
-                scale: [1, 0.8, 1.1, 1],
-                x: [0, 10, -10, 0]
-              }}
-              transition={{ 
-                duration: 6, 
-                repeat: Infinity,
-                repeatType: "reverse" 
-              }}
-            />
-            <motion.div 
-              className="absolute top-40 right-16 w-4 h-24 bg-accent opacity-50"
-              animate={{ 
-                height: [96, 80, 110, 96],
-                opacity: [0.5, 0.7, 0.3, 0.5]
-              }}
-              transition={{ 
-                duration: 5, 
-                repeat: Infinity,
-                repeatType: "reverse" 
-              }}
-            />
-            
-            {/* Additional pixel elements */}
-            <motion.div 
-              className="absolute top-1/4 left-1/4 w-3 h-3 bg-accent opacity-40"
-              initial={{ scale: 0 }}
-              animate={{ 
-                scale: [0, 1, 0.5, 1],
-                opacity: [0.4, 0.6, 0.2, 0.4]
-              }}
-              transition={{ 
-                duration: 3, 
-                delay: 1,
-                repeat: Infinity,
-                repeatType: "reverse" 
-              }}
-            />
-            <motion.div 
-              className="absolute bottom-1/3 left-1/3 w-6 h-2 bg-accent opacity-30"
-              initial={{ scale: 0 }}
-              animate={{ 
-                scale: [0, 1],
-                rotate: [0, 90, 180, 270, 360]
-              }}
-              transition={{ 
-                duration: 10, 
-                delay: 0.5,
-                repeat: Infinity
-              }}
-            />
-          </>
-        )}
+        {/* Removed pixelated decorative elements */}
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-secondary bg-opacity-80">
+      <section className="py-16 relative overflow-hidden">
+        <div className="absolute inset-0 glass-dark -z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="pixel-text text-3xl text-accent">ABOUT ME</h2>
@@ -136,7 +68,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <motion.div
-                className="bg-primary p-6 rounded-sm pixel-border"
+                className="glass p-6 rounded-sm"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
@@ -173,19 +105,6 @@ export default function Home() {
                     fill 
                     style={{objectFit: 'cover'}} 
                   />
-                  {/* Pixel art decoration */}
-                  <div className="absolute bottom-0 left-0 w-full">
-                    <div className="flex">
-                      <div className="w-8 h-8 bg-accent"></div>
-                      <div className="w-8 h-8 bg-primary"></div>
-                      <div className="w-8 h-8 bg-accent"></div>
-                      <div className="w-8 h-8 bg-primary"></div>
-                      <div className="w-8 h-8 bg-accent"></div>
-                      <div className="w-8 h-8 bg-primary"></div>
-                      <div className="w-8 h-8 bg-accent"></div>
-                      <div className="w-8 h-8 bg-primary"></div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </motion.div>
@@ -209,7 +128,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
             <motion.div
-              className="project-card bg-secondary p-6 rounded-sm"
+              className="project-card glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
@@ -234,7 +153,7 @@ export default function Home() {
 
             {/* Project 2 */}
             <motion.div
-              className="project-card bg-secondary p-6 rounded-sm"
+              className="project-card glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 }}
@@ -259,7 +178,7 @@ export default function Home() {
 
             {/* Project 3 */}
             <motion.div
-              className="project-card bg-secondary p-6 rounded-sm"
+              className="project-card glass p-6 rounded-sm hover:glass-accent transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.4 }}
@@ -292,7 +211,8 @@ export default function Home() {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="py-16 bg-secondary bg-opacity-80">
+      <section className="py-16 relative overflow-hidden">
+        <div className="absolute inset-0 glass-dark -z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="pixel-text text-3xl text-accent">TECH STACK</h2>
@@ -303,7 +223,7 @@ export default function Home() {
             {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Python', 'Supabase', 'MongoDB', 'AI/ML', 'Ollama', 'LLM', 'Node.js', 'LangChain'].map((tech, index) => (
               <motion.div
                 key={tech}
-                className="bg-primary p-4 rounded-sm text-center"
+                className="glass p-4 rounded-sm text-center hover:glass-accent transition-all duration-300"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -326,7 +246,7 @@ export default function Home() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
-            className="bg-accent bg-opacity-10 p-12 rounded-sm border border-accent"
+            className="glass-accent p-12 rounded-sm"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
