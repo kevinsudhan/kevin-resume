@@ -16,7 +16,13 @@ const CertificateImage = ({ imagePath, title, pdfPath }: CertificateImageProps) 
 
   // Function to handle click on certificate
   const handleCertificateClick = () => {
-    setIsModalOpen(true);
+    if (pdfPath) {
+      // Open PDF in a new tab if PDF path is provided
+      window.open(pdfPath, '_blank');
+    } else {
+      // Open modal if no PDF path is provided
+      setIsModalOpen(true);
+    }
   };
 
   // Function to close the modal

@@ -1,0 +1,86 @@
+# KEVIN SUDHAN
+contact@example.com | LinkedIn: [LinkedIn URL]
+
+## PROFESSIONAL SUMMARY
+Versatile Full-Stack Developer and AI Agent Engineer with expertise in modern web technologies, AI/ML implementation, and workflow automation. Skilled in developing innovative solutions across multiple domains including fintech, healthcare, and assistive technologies. Proficient in Next.js, React, TypeScript, Python, and various AI frameworks.
+
+## TECHNICAL SKILLS
+- **Programming Languages**: JavaScript, TypeScript, Python, HTML, CSS
+- **Frameworks & Libraries**: Next.js, React, Node.js, Tailwind CSS, LangChain
+- **AI/ML Technologies**: LLM, Ollama, YOLO, Computer Vision, Generative AI
+- **Databases**: MongoDB, Supabase
+- **Other Technologies**: Raspberry Pi, IoT, Blockchain (Ethereum)
+
+## PROFESSIONAL EXPERIENCE
+
+### Cybersecurity Intern
+**Alibi Technologies LLP** | 2024
+- Collaborated with government agencies on implementing cybersecurity practices in real-world scenarios
+- Conducted threat detection and vulnerability assessments for critical systems
+- Implemented security protocols and best practices for enterprise applications
+- Gained hands-on experience in security implementation and threat mitigation
+
+### Full-Stack Developer
+**Everyday Banking Solutions** | 2024
+- Developed a comprehensive banking website with full CRM functionality
+- Implemented secure user authentication and transaction management systems
+- Created intuitive account dashboards and administrative controls
+- Built responsive interfaces for everyday banking operations
+
+## PROJECTS
+
+### WHISTLE
+**Decentralized Microfinance Platform**
+- Developed a blockchain-based microfinance platform for trusted communities like colleges and universities
+- Implemented smart contracts for secure micro-loan requests, lending, and staking
+- Technologies: Next.js, Supabase, Ethereum Chain, Tailwind CSS
+
+### MITHRA
+**Intelligent Multilingual AI Health Assistant**
+- Created an edge-based AI agent for patient care in hospital rooms
+- Implemented real-time health monitoring using integrated sensors and LLM-based intelligence
+- Developed sentiment analysis and voice-based interactions in native languages
+- Technologies: Next.js, Ollama, TypeScript, Tailwind CSS
+
+### DYNA BRAILLE
+**AI-Powered Assistive Technology for the Visually Impaired**
+- Designed a system that translates printed text into dynamic braille patterns using computer vision
+- Implemented haptic feedback technology for real-time text interaction
+- Technologies: Next.js, TypeScript, Raspberry Pi, Solenoids, MOSFETs
+
+### EBS (Emotion-Based Storytelling)
+**AI-Powered Interactive Storytelling Platform**
+- Created a platform that generates personalized stories based on a child's emotional state
+- Implemented facial recognition for real-time emotion analysis
+- Technologies: Next.js, TypeScript, YOLO, Tailwind CSS
+
+### STAMS (Smart Traffic Management System)
+**Intelligent Traffic Optimization Solution**
+- Developed a computer vision system to monitor traffic patterns and detect congestion
+- Implemented machine learning algorithms to dynamically adjust traffic signals
+- Technologies: Next.js, TypeScript, YOLO, Tailwind CSS
+
+### NEWS BOT
+**AI-Powered News Aggregation Platform**
+- Built a personalized news content delivery system using AI
+- Implemented natural language processing for article analysis and summarization
+- Technologies: Next.js, TypeScript, MongoDB, Tailwind CSS
+
+## CERTIFICATIONS
+- Google AI Essentials (2025)
+- Google Data Analytics Professional (2025)
+- Google Cybersecurity Professional (2025)
+- Google IT Automation with Python (2025)
+- Google Prompt Engineering (2025)
+- Google Generative AI Automation (2025)
+- Google Generative AI Learning Path (2025)
+- IBM AI Developer (2025)
+- IBM Full Stack Software Developer (2025)
+
+## EDUCATION
+[Your education details - not found in the provided portfolio]
+
+## ADDITIONAL INFORMATION
+- Workflow Automation Specialist
+- Experience with AI agent development and implementation
+- Proficient in building responsive, modern web applications
