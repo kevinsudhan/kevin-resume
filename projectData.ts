@@ -23,6 +23,19 @@ export const projects = [
     techStack: ['Next.js', 'Ollama', 'TypeScript', 'Tailwind'],
   },
   {
+    id: 'dyna-braille',
+    title: 'DYNA BRAILLE',
+    description: 'Dyna Braille is an AI-powered assistive system designed to help visually impaired individuals read and interact with text in their environment. Using computer vision and haptic feedback technology, the system translates printed text into dynamic braille patterns that can be felt in real-time, providing greater independence and accessibility.',
+    images: [
+      '/DYNA BRAILLE/WhatsApp Image 2025-06-11 at 2.27.42 PM.jpeg',
+      '/DYNA BRAILLE/WhatsApp Image 2025-06-11 at 2.27.42 PM (1).jpeg',
+      '/DYNA BRAILLE/WhatsApp Image 2025-06-11 at 2.27.42 PM (2).jpeg',
+      '/DYNA BRAILLE/WhatsApp Image 2025-06-11 at 2.27.42 PM (3).jpeg',
+      '/DYNA BRAILLE/WhatsApp Image 2025-06-11 at 2.27.42 PM (4).jpeg',
+    ],
+    techStack: ['Next.js', 'TypeScript', 'Raspberry Pi', 'Solenoids', 'MOSFETs'],
+  },
+  {
     id: 'ebs',
     title: 'EBS',
     description: 'EBS (Emotion-Based Storytelling) is an innovative AI-powered platform that creates personalized, interactive stories based on a child\'s emotional state. Using facial recognition technology, EBS analyzes the child\'s emotions in real-time and dynamically adapts the narrative to address their specific emotional needs.',
