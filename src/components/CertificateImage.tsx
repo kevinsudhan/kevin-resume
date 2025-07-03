@@ -16,13 +16,7 @@ const CertificateImage = ({ imagePath, title, pdfPath }: CertificateImageProps) 
 
   // Function to handle click on certificate
   const handleCertificateClick = () => {
-    if (pdfPath) {
-      // Open PDF in a new tab if PDF path is provided
-      window.open(pdfPath, '_blank');
-    } else {
-      // Open modal if no PDF path is provided
-      setIsModalOpen(true);
-    }
+    setIsModalOpen(true);
   };
 
   // Function to close the modal
@@ -66,10 +60,10 @@ const CertificateImage = ({ imagePath, title, pdfPath }: CertificateImageProps) 
 
       {/* Modal for larger certificate view */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
-          <div className="relative max-w-4xl max-h-[90vh] overflow-auto p-2 bg-white rounded-lg">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90" onClick={closeModal}>
+          <div className="relative max-w-5xl w-[95%] h-[90vh] bg-white rounded-lg">
             <button 
-              className="absolute top-2 right-2 z-10 bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center"
+              className="absolute top-4 right-4 z-10 bg-accent text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold"
               onClick={(e) => {
                 e.stopPropagation();
                 closeModal();
@@ -77,13 +71,12 @@ const CertificateImage = ({ imagePath, title, pdfPath }: CertificateImageProps) 
             >
               ×
             </button>
-            <div className="relative w-full" style={{ height: '80vh' }}>
-              <Image
-                src={imagePath}
+            <div className="relative w-full h-full p-4">
+              {/* Use the image path from the certificate */}
+              <img 
+                src={imagePath} 
                 alt={title}
-                fill
-                style={{ objectFit: 'contain' }}
-                className="rounded-lg"
+                className="w-full h-full object-contain rounded-lg"
               />
             </div>
           </div>
