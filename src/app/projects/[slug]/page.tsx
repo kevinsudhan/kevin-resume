@@ -127,7 +127,6 @@ export default function ProjectDetail() {
     challenge: string;
     solution: string;
     features: string[];
-    outcome: string;
   };
   
   const projectDetails: Record<string, ProjectDetails> = {
@@ -139,8 +138,7 @@ export default function ProjectDetail() {
         "Community-based trust scoring",
         "Automated disbursements and collections",
         "Peer endorsement system"
-      ],
-      outcome: "Successfully deployed at 3 university campuses with over 500 active users and $50,000 in peer-to-peer loans facilitated."
+      ]
     },
     'mithra': {
       challenge: "Building an AI health assistant that maintains privacy while providing real-time monitoring and support.",
@@ -151,8 +149,7 @@ export default function ProjectDetail() {
         "Sentiment analysis for mental health support",
         "Emergency alert system",
         "Local AI processing for privacy"
-      ],
-      outcome: "Piloted at 2 hospitals with positive feedback from both patients and healthcare providers on improved response times and patient comfort."
+      ]
     },
     'ebs': {
       challenge: "Creating a comprehensive digital presence and operational system for a financial services company.",
@@ -163,8 +160,7 @@ export default function ProjectDetail() {
         "Customer relationship management",
         "Appointment scheduling system",
         "Document management and verification"
-      ],
-      outcome: "Increased online appointment bookings by 75% and improved operational efficiency by 40%."
+      ]
     },
     'newsbot': {
       challenge: "Developing a real-time news aggregation system for stock traders that filters relevant information.",
@@ -175,8 +171,7 @@ export default function ProjectDetail() {
         "Real-time price alerts",
         "Sentiment analysis of news articles",
         "Historical correlation data"
-      ],
-      outcome: "Adopted by a trading firm with reported improvement in trade timing and decision-making speed."
+      ]
     },
     'stams': {
       challenge: "Addressing traffic congestion and accident response through real-time monitoring and AI intervention.",
@@ -187,8 +182,7 @@ export default function ProjectDetail() {
         "Emergency services notification",
         "Traffic flow optimization",
         "Pedestrian safety alerts"
-      ],
-      outcome: "Testing showed potential 23% reduction in emergency response times and 15% improvement in traffic flow at congested intersections."
+      ]
     },
     'dynabraille': {
       challenge: "Creating an affordable, portable solution for the visually impaired to interact with their environment.",
@@ -199,8 +193,7 @@ export default function ProjectDetail() {
         "Dynamic tactile feedback",
         "Voice assistance and navigation",
         "Text recognition and translation to Braille"
-      ],
-      outcome: "Prototype testing with visually impaired users showed significant improvements in environmental awareness and independence."
+      ]
     },
     'demete': {
       challenge: "Building trust and transparency in the food delivery ecosystem through blockchain technology.",
@@ -211,8 +204,7 @@ export default function ProjectDetail() {
         "Decentralized review system",
         "Tokenized loyalty program",
         "Direct chef-to-consumer marketplace"
-      ],
-      outcome: "Successfully launched in 2 cities with 25+ restaurants and 1000+ users onboarded in the first month."
+      ]
     }
   };
 
@@ -220,8 +212,7 @@ export default function ProjectDetail() {
   const additionalDetails = projectDetails[projectId] || {
     challenge: "Addressing complex technical problems in an innovative way.",
     solution: "Implemented cutting-edge technologies to create effective solutions.",
-    features: ["Feature 1", "Feature 2", "Feature 3"],
-    outcome: "Successfully delivered project with positive results."
+    features: ["Feature 1", "Feature 2", "Feature 3"]
   };
 
   return (
@@ -345,7 +336,7 @@ export default function ProjectDetail() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-12"
+          className="grid grid-cols-1 gap-12"
         >
           <div>
             <h2 className="mono-text text-2xl text-light mb-4">Key Features</h2>
@@ -357,11 +348,6 @@ export default function ProjectDetail() {
                 </li>
               ))}
             </ul>
-          </div>
-          
-          <div>
-            <h2 className="mono-text text-2xl text-light mb-4">Outcome</h2>
-            <p className="text-light/80 leading-relaxed">{additionalDetails?.outcome}</p>
           </div>
         </motion.div>
       </div>
