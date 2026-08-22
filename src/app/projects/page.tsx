@@ -8,36 +8,36 @@ import { projects } from './projectData';
 
 // Tech stack icons mapping
 const techIcons: Record<string, string> = {
-  'Next.js': '/logos/nextjs.png',
-  'React': '/logos/react.jpg',
-  'TypeScript': '/logos/Typescript-01.png',
-  'JavaScript': '/logos/JavaScript-Logo.png',
-  'Tailwind': '/logos/Tailwind_CSS_Logo.svg.png',
-  'Supabase': '/logos/supabase-logo-png_seeklogo-435677.png',
-  'MongoDB': '/logos/mongodb-logo-png_seeklogo-481256.png',
-  'Ethereum Chain': '/logos/etheriumm.png',
-  'YOLO': '/logos/yologo_2_lopvlj.png',
-  'Web3': '/logos/web3-logo-png_seeklogo-436086.png',
+  'Next.js': '/logos/nextjs.webp',
+  'React': '/logos/react.webp',
+  'TypeScript': '/logos/Typescript-01.webp',
+  'JavaScript': '/logos/JavaScript-Logo.webp',
+  'Tailwind': '/logos/Tailwind_CSS_Logo.svg.webp',
+  'Supabase': '/logos/supabase-logo-png_seeklogo-435677.webp',
+  'MongoDB': '/logos/mongodb-logo-png_seeklogo-481256.webp',
+  'Ethereum Chain': '/logos/etheriumm.webp',
+  'YOLO': '/logos/yologo_2_lopvlj.webp',
+  'Web3': '/logos/web3-logo-png_seeklogo-436086.webp',
   'Blockchain': '/logos/blockchain-icon-design-cryptocurrency-vector-digital-logo-blockchain-icon-design-cryptocurrency-vector-digital-logo-201091629.webp',
   'DApp': '/logos/dapp.webp',
   'PWA': '/logos/api-application-interface-icon-simple-600nw-2188533787.webp',
   'LIDAR': '/logos/LIDAR.webp',
-  'Ollama': '/logos/ollama-logo-png_seeklogo-593420.png',
-  'Llama 3': '/logos/LLAMA 3.jpg',
-  'LLAMA': '/logos/LLAMA 3.jpg',
-  'Twitter API v2': '/logos/TWITTER API.jpg',
-  'Reddit JSON API': '/logos/REDDIT.jpg',
-  'Yahoo Finance API': '/logos/YAHOO FINANCE.png', 
-  'ESP32': '/logos/ESP32.png',
-  'Raspberry Pi': '/logos/RASBPERRY PI.png',
-  'Framer Motion': '/logos/framer-motion-logo-1-312x211.png',
-  'LIFI Protocol': '/logos/Lifi_Logo.svg.png',
-  'Solenoids': '/logos/SOLENOID.jpg',
-  'MOSFETs': '/logos/MOSFETS.png'
+  'Ollama': '/logos/ollama-logo-png_seeklogo-593420.webp',
+  'Llama 3': '/logos/LLAMA 3.webp',
+  'LLAMA': '/logos/LLAMA 3.webp',
+  'Twitter API v2': '/logos/TWITTER API.webp',
+  'Reddit JSON API': '/logos/REDDIT.webp',
+  'Yahoo Finance API': '/logos/YAHOO FINANCE.webp', 
+  'ESP32': '/logos/ESP32.webp',
+  'Raspberry Pi': '/logos/RASBPERRY PI.webp',
+  'Framer Motion': '/logos/framer-motion-logo-1-312x211.webp',
+  'LIFI Protocol': '/logos/Lifi_Logo.svg.webp',
+  'Solenoids': '/logos/SOLENOID.webp',
+  'MOSFETs': '/logos/MOSFETS.webp'
 };
 
 // Fallback icon for technologies without a specific icon
-const fallbackIcon = '/logos/HARDWARE.jpg';
+const fallbackIcon = '/logos/HARDWARE.webp';
 
 export default function Projects() {
   return (

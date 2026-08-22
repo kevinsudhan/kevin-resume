@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="w-full h-64 bg-accent bg-opacity-20 relative overflow-hidden">
                   {/* Profile photo */}
                   <Image 
-                    src="/picture.png" 
+                    src="/picture.webp" 
                     alt="Kevin's profile picture" 
                     fill 
                     style={{objectFit: 'cover'}} 
@@ -136,7 +136,7 @@ export default function Home() {
             >
               <div className="h-48 bg-primary mb-4 overflow-hidden relative">
                 <Image
-                  src="/WHISTLE/WhatsApp Image 2025-06-02 at 7.05.27 PM (2).jpeg"
+                  src="/WHISTLE/WhatsApp Image 2025-06-02 at 7.05.27 PM (2).webp"
                   alt="Whistle Project"
                   fill
                   style={{objectFit: 'cover'}}
@@ -161,7 +161,7 @@ export default function Home() {
             >
               <div className="h-48 bg-primary mb-4 overflow-hidden relative">
                 <Image
-                  src="/MITHRA/WhatsApp Image 2025-06-11 at 1.57.48 PM.jpeg"
+                  src="/MITHRA/WhatsApp Image 2025-06-11 at 1.57.48 PM.webp"
                   alt="Mithra Project"
                   fill
                   style={{objectFit: 'cover'}}
@@ -186,7 +186,7 @@ export default function Home() {
             >
               <div className="h-48 bg-primary mb-4 overflow-hidden relative">
                 <Image
-                  src="/DYNA BRAILLE/WhatsApp Image 2025-06-11 at 2.27.42 PM.jpeg"
+                  src="/DYNA BRAILLE/WhatsApp Image 2025-06-11 at 2.27.42 PM.webp"
                   alt="Dyna Braille Project"
                   fill
                   style={{objectFit: 'cover'}}

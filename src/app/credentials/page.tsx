@@ -64,7 +64,7 @@ export default function Credentials() {
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="md:w-1/3 h-32 bg-primary relative overflow-hidden rounded-sm">
                     <Image
-                      src="/certificates/internships/1687782026926130001_attach_139070748222550110_230629_124120-1.pdf-6_page-0001.jpg"
+                      src="/certificates/internships/1687782026926130001_attach_139070748222550110_230629_124120-1.pdf-6_page-0001.webp"
                       alt="Alibi Technologies LLP Certificate"
                       fill
                       style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -92,7 +92,7 @@ export default function Credentials() {
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="md:w-1/3 h-32 bg-primary relative overflow-hidden rounded-sm">
                     <Image
-                      src="/certificates/internships/everyday.png"
+                      src="/certificates/internships/everyday.webp"
                       alt="Everyday Banking Solutions Website"
                       fill
                       style={{ objectFit: 'cover' }}
@@ -124,7 +124,7 @@ export default function Credentials() {
                   <h4 className="pixel-text text-xl text-accent mb-4">Alibi Technologies LLP Certificate</h4>
                   <div className="h-[400px] bg-primary relative overflow-hidden rounded-sm mb-4">
                     <Image
-                      src="/certificates/internships/1687782026926130001_attach_139070748222550110_230629_124120-1.pdf-6_page-0001.jpg"
+                      src="/certificates/internships/1687782026926130001_attach_139070748222550110_230629_124120-1.pdf-6_page-0001.webp"
                       alt="Alibi Technologies LLP Certificate"
                       fill
                       style={{ objectFit: 'contain' }}
@@ -148,7 +148,7 @@ export default function Credentials() {
                   <h4 className="pixel-text text-xl text-accent mb-4">Everyday Banking Solutions</h4>
                   <div className="h-[400px] bg-primary relative overflow-hidden rounded-sm mb-4">
                     <Image
-                      src="/certificates/internships/everyday.png"
+                      src="/certificates/internships/everyday.webp"
                       alt="Everyday Banking Solutions Website"
                       fill
                       style={{ objectFit: 'contain' }}
@@ -182,7 +182,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/Google AI Essentials_page-0001.jpg" 
+                  imagePath="/certificates/professional/Google AI Essentials_page-0001.webp" 
                   title="Google AI Essentials Certificate" 
                   pdfPath="/certificates/professional/Google AI Essentials.pdf"
                 />
@@ -207,7 +207,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/Google Data Analytics_page-0001.jpg" 
+                  imagePath="/certificates/professional/Google Data Analytics_page-0001.webp" 
                   title="Google Data Analytics Certificate" 
                   pdfPath="/certificates/professional/Google Data Analytics.pdf"
                 />
@@ -232,7 +232,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/Google Cybersecurity_page-0001.jpg" 
+                  imagePath="/certificates/professional/Google Cybersecurity_page-0001.webp" 
                   title="Google Cybersecurity Certificate" 
                   pdfPath="/certificates/professional/Google Cybersecurity.pdf"
                 />
@@ -257,7 +257,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/Google IT Automation_page-0001.jpg" 
+                  imagePath="/certificates/professional/Google IT Automation_page-0001.webp" 
                   title="Google IT Automation Certificate" 
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">IT Automation with Python</h3>
@@ -281,7 +281,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/Google Prompting_page-0001.jpg" 
+                  imagePath="/certificates/professional/Google Prompting_page-0001.webp" 
                   title="Google Prompting Certificate" 
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">Prompt Engineering</h3>
@@ -305,7 +305,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/Generative AI Automation_page-0001.jpg" 
+                  imagePath="/certificates/professional/Generative AI Automation_page-0001.webp" 
                   title="Generative AI Automation Certificate" 
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">Generative AI Automation</h3>
@@ -329,7 +329,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/Generative Ai Learning path_page-0001.jpg" 
+                  imagePath="/certificates/professional/Generative Ai Learning path_page-0001.webp" 
                   title="Generative AI Learning Path Certificate" 
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">Generative AI Learning Path</h3>
@@ -353,7 +353,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/IBM AI Developer_page-0001.jpg" 
+                  imagePath="/certificates/professional/IBM AI Developer_page-0001.webp" 
                   title="IBM AI Developer Certificate" 
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">AI Developer</h3>
@@ -377,7 +377,7 @@ export default function Credentials() {
                 viewport={{ once: true }}
               >
                 <CertificateImage 
-                  imagePath="/certificates/professional/IBM Full Stack Software_page-0001.jpg" 
+                  imagePath="/certificates/professional/IBM Full Stack Software_page-0001.webp" 
                   title="IBM Full Stack Software Developer Certificate" 
                 />
                 <h3 className="pixel-text text-xl text-accent mb-2">Full Stack Software Developer</h3>

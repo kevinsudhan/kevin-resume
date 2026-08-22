@@ -83,7 +83,7 @@ const SpaceBackground: React.FC = () => {
             }}
           >
             <Image
-              src={`/space design/planet_${planet.imageNumber}-removebg-preview.png`}
+              src={`/space design/planet_${planet.imageNumber}-removebg-preview.webp`}
               alt={`Pixel Planet ${planet.imageNumber}`}
               width={planet.size}
               height={planet.size}
@@ -247,7 +247,7 @@ const SpaceBackground: React.FC = () => {
                 )}
                 
                 <Image
-                  src={`/space design/spaceship_${ship.imageNumber}-removebg-preview.png`}
+                  src={`/space design/spaceship_${ship.imageNumber}-removebg-preview.webp`}
                   alt={`Pixel Spaceship ${ship.imageNumber}`}
                   width={ship.size}
                   height={ship.size}
